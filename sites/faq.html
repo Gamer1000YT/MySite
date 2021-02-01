@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width-device=width, initial scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body, html {
+        height;
+        100%;
+        margin = 0%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .bg-image {
+        /*Full height*/
+        height = 50%;
+        /* Center and scale the image nicely */
+        background-position = center;
+        background-repeat = no-repeat;
+        background-size = cover;
+    }
+    /* Images used */
+    .img1 {background-image: url("img_snow.jpg");}
+    .img2 {background-image: url("img_lights.jpg");}
+    .img3 {background-image: url("img_girl.jpg"); }
+    .img4 {background-image: url("img_nature.jpg");}
+    .img5 {background-image: url("img_forest.jpg");}
+    .img6 {
+        background-image: url("img_woods.jpg");
+    }
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+        background-color: rgb(0,0,0); /* Fallback Color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        font-size: 80px;
+        border: 10px solid #f1f1f1;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 2;
+        widht: 300px;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+</body>
+
+<div class="bg-image img1 "></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class=" bg-image img6"></div>
+
+<div class="bg-text">Coming Soon!</div>
+</body>
+</style>
+
+
+
+
+<title>The 2nd Page</title>
+</head>
+</html>
+
+<h1>Development Page</h1>
+<h2>This is a dev page only!</h2>
+
+<html>
+<body>
+<button type="button"
+<p>Useless button </p></button>
+</html>
+</body>
+
+
+<html>
+<body>
+<a href="Professional.html">Previous page</a>
+</html>
+</body>
+
+<h2>Upload File!!</h2>
+<html>
+<body>
+
+<p>Click on the button to upload</p>
+<form action="/action_page.php">
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+    </form>
+
+    </body>
+    </html>
+	
+	<html>
+	<body>
+	<a href="Normal.html">NORMAL PAGE</a>
+	</body>
+	</html>
+
+
+
+<html>
+<body>
+
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+
+<script>
+var w;
+
+function startWorker() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support this type of script.....";
+  }
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+#div1 {
+   widht: 35px;
+   height: 70px;
+   padding: 10px;
+   border: 1px solid #aaaaaa;
+}
+</style>
+<script>
+
+function allowdrop(ev) {
+   ev.preventDefault();
+}
+
+function drag(ev) {
+   ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+   ev.preventDefault();
+   var data = ev.dataTransfer.getData("text");
+   ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>I don't have image sources.</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="330" height="69">
+
+
+</body>
+</html>
+   
+ 
+<html>
+<head>
+<style>
+.button {
+   background-color: blue;
+   border: none;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+</style>
+</head>
+</html>
+  
+<style>
+body h1 {
+   text-align: center;
+   color: blue;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
